@@ -2,7 +2,7 @@
   <header class="header">
     <div class="header__logo">
       <NuxtLink to="/"
-        ><img src="../assets/logos/logo.jpg" alt="logo" />
+        ><img src="../assets/logos/company-logo.jpg" alt="logo" />
       </NuxtLink>
     </div>
     <nav>
