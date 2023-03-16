@@ -1,0 +1,19 @@
+<template>
+  <div>
+    <NuxtPage />
+  </div>
+</template>
+
+<style lang="scss">
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #080808;
+  overflow: hidden;
+}
+</style>
+

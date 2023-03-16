@@ -1,0 +1,26 @@
+// https://nuxt.com/docs/api/configuration/nuxt-config
+export default defineNuxtConfig({
+    app: {
+    head: {
+      charset: 'utf-8',
+      viewport: 'width=390, initial-scale=1',
+      title: 'Project Fiverr',
+      link: [
+      {
+        rel: 'preconnect',
+        href: 'https://fonts.googleapis.com'
+      },
+      {
+        rel: 'preconnect',
+        href: 'https://fonts.gstatic.com',
+        crossorigin: ""
+      },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;800;900&display=swap',
+      },
+    ]
+    }
+  }
+
+})
