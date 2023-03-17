@@ -92,7 +92,7 @@ export default {
   },
   mounted() {
     const hero = document.getElementById('hero');
-
+    // Add Glide animation on mouse movement
     window.onmousemove = (e) => {
       const mouseX = e.clientX,
         mouseY = e.clientY;

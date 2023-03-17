@@ -1,5 +1,4 @@
 <template>
-  <Header />
   <div class="contact">
     <div class="contact__details">
       <h1 data-aos="fade-up">HI<span>,</span></h1>
@@ -23,12 +22,8 @@
 </template>
 
 <script>
-import Header from '~/components/Header';
 export default {
   name: 'Contact',
-  components: {
-    Header,
-  },
 };
 </script>
 <style lang="scss" scoped>

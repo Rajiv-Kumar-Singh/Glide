@@ -1,15 +1,20 @@
 <template>
   <div>
+    <Header />
     <NuxtPage />
   </div>
 </template>
 <script>
-// import animate on scroll library for adding scroll animation
+import Header from '~/components/Header';
+// import animate-on-scroll library for adding scroll animation
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 export default {
   name: 'App',
+  components: {
+    Header,
+  },
 
   mounted() {
     // Scroll Animation settings
