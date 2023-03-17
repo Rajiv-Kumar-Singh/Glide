@@ -636,6 +636,7 @@ export default {
 
       &:nth-child(4) {
         left: 29.5%;
+        top: 24.5%;
       }
 
       &:nth-child(5) {
