@@ -194,7 +194,7 @@ export default {
   }
   @media screen and (max-width: 448px) {
     & {
-      width: 95vw;
+      width: 99vw;
     }
   }
 }
@@ -572,7 +572,7 @@ export default {
   @media screen and (max-width: 484px) {
     &__tile {
       & > video {
-        width: 6em;
+        width: 5.5em;
       }
 
       &:nth-child(1) {
@@ -580,30 +580,76 @@ export default {
       }
 
       &:nth-child(2) {
-        top: 32%;
+        top: 30%;
         left: 0%;
       }
 
       &:nth-child(3) {
-        top: 55%;
+        top: 50%;
         left: 8%;
       }
 
       &:nth-child(4) {
         left: 28%;
+        img {
+          width: 12em;
+        }
       }
 
       &:nth-child(5) {
-        left: 74%;
+        left: 72%;
       }
 
       &:nth-child(6) {
-        top: 32%;
-        left: 74%;
+        top: 30%;
+        left: 78%;
+
+        &:hover {
+          transition: all ease 2s;
+          left: 70%;
+        }
       }
 
       &:nth-child(7) {
-        top: 55%;
+        top: 50%;
+        &:hover {
+          transition: all ease 2s;
+          left: 70%;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    &__tile {
+      & > video {
+        width: 5em;
+      }
+
+      &:nth-child(2) {
+        top: 27.5%;
+      }
+
+      &:nth-child(3) {
+        top: 45.5%;
+        left: 8%;
+      }
+
+      &:nth-child(4) {
+        left: 29.5%;
+      }
+
+      &:nth-child(5) {
+        left: 72%;
+      }
+
+      &:nth-child(6) {
+        top: 27.5%;
+        left: 78%;
+      }
+
+      &:nth-child(7) {
+        top: 45.5%;
       }
     }
   }
