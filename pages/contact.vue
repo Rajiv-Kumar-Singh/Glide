@@ -2,11 +2,22 @@
   <Header />
   <div class="contact">
     <div class="contact__details">
-      <h1>HI<span>,</span></h1>
-      <h2>I'M A VIDEO EDITOR SPECIALIZED IN SHORT-FORM CONTENT.</h2>
-      <h3>IF YOU'RE INTERESTED, YOU CAN CONTACT ME THROUGH MY TWITTER.</h3>
-      <NuxtLink to="https://twitter.com/" target="_blank"> TWITTER </NuxtLink>
-      <p>-DNIEL</p>
+      <h1 data-aos="fade-up">HI<span>,</span></h1>
+      <h2 data-aos="fade-up" data-aos-delay="100">
+        I'M A VIDEO EDITOR SPECIALIZED IN SHORT-FORM CONTENT.
+      </h2>
+      <h3 data-aos="fade-up" data-aos-delay="200">
+        IF YOU'RE INTERESTED, YOU CAN CONTACT ME THROUGH MY TWITTER.
+      </h3>
+      <NuxtLink
+        to="https://twitter.com/"
+        target="_blank"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
+        TWITTER
+      </NuxtLink>
+      <p data-aos="fade-up" data-aos-delay="400">-DNIEL</p>
     </div>
   </div>
 </template>
@@ -32,6 +43,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0.5em;
 
   &__details {
     display: flex;
@@ -53,7 +65,7 @@ export default {
 
     h2 {
       font-size: 1em;
-      width: 10em;
+      max-width: 10em;
       font-weight: 400;
       line-height: 1;
       margin-top: 0.5em;
@@ -62,8 +74,9 @@ export default {
     h3 {
       margin-top: 0.5em;
       font-size: 0.65em;
-      width: 20em;
+      max-width: 20em;
       font-weight: 400;
+      letter-spacing: 0.021em;
     }
 
     a {
@@ -72,19 +85,39 @@ export default {
       color: rgba(28, 28, 28, 1);
       font-family: 'Rubik Mono One', sans-serif;
       width: 100%;
-      min-width: 18em;
+      max-width: 50em;
       font-weight: 400;
       text-decoration: none;
       font-size: 0.35em;
-      padding: 0.45em 0 0.25em 0;
+      padding: 0.455em 0 0.255em 0;
       border-radius: 0.2em;
     }
 
     p {
-      margin-top: 0.5em;
+      margin-top: 0.7em;
       text-transform: uppercase;
       color: #ffb900;
       font-size: 0.875em;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    &__details {
+      h1 {
+        font-size: 1em;
+      }
+      h2 {
+        font-size: 0.75em;
+      }
+      h3 {
+        font-size: 0.5em;
+      }
+      a {
+        font-size: 0.3em;
+      }
+      p {
+        font-size: 0.8em;
+      }
     }
   }
 }
