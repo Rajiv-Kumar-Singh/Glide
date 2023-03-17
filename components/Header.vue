@@ -103,7 +103,6 @@ export default {
       text-decoration: none;
       img {
         position: relative;
-        z-index: -1;
         width: 7em;
         height: auto;
         border-radius: 0.2em;
