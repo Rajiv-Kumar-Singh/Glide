@@ -17,6 +17,8 @@ export default {
   position: relative;
   top: 0;
   text-align: center;
+  font-family: 'Vibes', cursive;
+  font-size: 3em;
   color: #ffffff;
 }
 </style>
