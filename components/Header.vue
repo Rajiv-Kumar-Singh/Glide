@@ -73,11 +73,13 @@ export default {
         iconMiddleLine.style.display = 'inline-block';
         iconTopLine.classList.remove('header__icon-line-animate');
         iconBottomLine.classList.remove('header__icon-bottom-line-animate');
+        navLinksDisplay.classList.remove('header__link-animate');
       } else {
         navLinksDisplay.style.display = 'flex';
         iconMiddleLine.style.display = 'none';
         iconTopLine.classList.add('header__icon-line-animate');
         iconBottomLine.classList.add('header__icon-bottom-line-animate');
+        navLinksDisplay.classList.add('header__link-animate');
       }
     },
   },
@@ -138,7 +140,6 @@ export default {
     }
   }
 
-  // New CSS
   &__hamburger-icon {
     position: absolute;
     top: 1.5em;
@@ -214,6 +215,34 @@ export default {
       display: none;
     }
 
+    &__link-animate {
+      a {
+        animation: slideRight 0.2s linear forwards;
+      }
+
+      a:nth-child(2) {
+        animation: slideRightDelay 0.2s 0.1s ease-in-out 1 forwards;
+      }
+    }
+
+    @keyframes slideRight {
+      0% {
+        margin-left: -50%;
+      }
+      100% {
+        margin-left: 2em;
+      }
+    }
+
+    @keyframes slideRightDelay {
+      0% {
+        margin-left: -50%;
+      }
+      100% {
+        margin-left: 2.5em;
+      }
+    }
+
     // Active link stying
     &__active-link {
       margin-left: 0em;
@@ -221,28 +250,25 @@ export default {
       background: rgba(255, 185, 0, 1);
     }
 
-    &__link {
-      margin-left: 1.2em;
-    }
-
     &__links {
       position: absolute;
       top: 0;
       left: 0;
       width: 45vw;
-      height: 20em;
+      height: 100vh;
       justify-content: center;
       min-width: 18em;
       margin-right: 0;
-      padding: 2em 0 0 1em;
+      padding: 7em 0 0 0;
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: flex-start;
       flex-direction: column;
       background: #252424;
       text-align: center;
 
       a {
+        font-size: 1em;
         padding: 0.1em 0.3em 0.05em 0.3em;
       }
 

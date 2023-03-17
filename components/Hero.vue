@@ -635,7 +635,7 @@ export default {
       }
 
       &:nth-child(4) {
-        left: 29.5%;
+        left: 24%;
         top: 24.5%;
       }
 
@@ -653,43 +653,6 @@ export default {
       }
     }
   }
-
-  // @media screen and (max-width: 448px) {
-  //   &__tile {
-  //     &:nth-child(1) {
-  //       left: 12%;
-  //     }
-  //     &:nth-child(2) {
-  //       top: 25%;
-  //       left: 2%;
-  //     }
-
-  //     &:nth-child(3) {
-  //       top: 43%;
-  //       left: 12%;
-  //     }
-
-  //     &:nth-child(4) {
-  //       left: 29.5%;
-  //       img {
-  //         width: 9.5em;
-  //       }
-  //     }
-
-  //     &:nth-child(5) {
-  //       left: 65%;
-  //     }
-
-  //     &:nth-child(6) {
-  //       top: 27.5%;
-  //       left: 70%;
-  //     }
-
-  //     &:nth-child(7) {
-  //       left: 65%;
-  //     }
-  //   }
-  // }
 }
 
 @keyframes motion {
