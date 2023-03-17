@@ -33,7 +33,6 @@ export default {
 body {
   background-color: #000000;
   overflow: hidden;
-  border: 2px solid red;
 }
 </style>
 

@@ -3,7 +3,6 @@ export default defineNuxtConfig({
     app: {
     head: {
       charset: 'utf-8',
-      viewport: 'width=390, initial-scale=1',
       title: 'Project Fiverr',
       link: [
       {

@@ -141,7 +141,6 @@ export default {
   position: relative;
   top: 0;
   color: #ffffff;
-  border: 2px solid green;
 
   @media screen and (max-width: 1190px) {
     & {
@@ -650,6 +649,43 @@ export default {
 
       &:nth-child(7) {
         top: 45.5%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 448px) {
+    &__tile {
+      &:nth-child(1) {
+        left: 12%;
+      }
+      &:nth-child(2) {
+        top: 27.5%;
+        left: 2%;
+      }
+
+      &:nth-child(3) {
+        top: 45.5%;
+        left: 12%;
+      }
+
+      &:nth-child(4) {
+        left: 29.5%;
+        img {
+          width: 9.5em;
+        }
+      }
+
+      &:nth-child(5) {
+        left: 65%;
+      }
+
+      &:nth-child(6) {
+        top: 27.5%;
+        left: 70%;
+      }
+
+      &:nth-child(7) {
+        left: 65%;
       }
     }
   }
