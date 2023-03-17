@@ -141,6 +141,7 @@ export default {
   position: relative;
   top: 0;
   color: #ffffff;
+  border: 2px solid green;
 
   @media screen and (max-width: 1190px) {
     & {
@@ -174,10 +175,26 @@ export default {
       width: 90vmax;
     }
   }
-  @media screen and (max-width: 568px) {
+  @media screen and (max-width: 589px) {
     & {
-      width: 90vmax;
+      width: 80vmax;
       height: 100vmax;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    & {
+      width: 75vmax;
+      height: 108vmax;
+    }
+  }
+  @media screen and (max-width: 532px) {
+    & {
+      width: 98vw;
+    }
+  }
+  @media screen and (max-width: 448px) {
+    & {
+      width: 95vw;
     }
   }
 }
@@ -463,7 +480,7 @@ export default {
       }
     }
   }
-  @media screen and (max-width: 568px) {
+  @media screen and (max-width: 589px) {
     &__tile {
       & > video {
         width: 6em;
@@ -499,6 +516,94 @@ export default {
 
       &:nth-child(7) {
         top: 50%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    &__tile {
+      & > video {
+        width: 6em;
+      }
+
+      &:nth-child(2) {
+        top: 32%;
+      }
+
+      &:nth-child(3) {
+        top: 55%;
+      }
+
+      &:nth-child(6) {
+        top: 32%;
+      }
+
+      &:nth-child(7) {
+        top: 55%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 532px) {
+    &__tile {
+      & > video {
+        width: 6em;
+      }
+
+      &:nth-child(2) {
+        top: 32%;
+      }
+
+      &:nth-child(3) {
+        top: 55%;
+      }
+
+      &:nth-child(6) {
+        top: 32%;
+        left: 76%;
+      }
+
+      &:nth-child(7) {
+        top: 55%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 484px) {
+    &__tile {
+      & > video {
+        width: 6em;
+      }
+
+      &:nth-child(1) {
+        left: 8%;
+      }
+
+      &:nth-child(2) {
+        top: 32%;
+        left: 0%;
+      }
+
+      &:nth-child(3) {
+        top: 55%;
+        left: 8%;
+      }
+
+      &:nth-child(4) {
+        left: 28%;
+      }
+
+      &:nth-child(5) {
+        left: 74%;
+      }
+
+      &:nth-child(6) {
+        top: 32%;
+        left: 74%;
+      }
+
+      &:nth-child(7) {
+        top: 55%;
       }
     }
   }
