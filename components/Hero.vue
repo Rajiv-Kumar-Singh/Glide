@@ -630,7 +630,7 @@ export default {
       }
 
       &:nth-child(3) {
-        top: 41%;
+        top: 40.5%;
         left: 8%;
       }
 
@@ -648,7 +648,7 @@ export default {
       }
 
       &:nth-child(7) {
-        top: 41%;
+        top: 40.5%;
       }
     }
   }
